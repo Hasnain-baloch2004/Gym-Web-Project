@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f9bbc435e.js" crossorigin="anonymous"></script>
+    <title>111 Fitness</title>
+</head>
+<body>
+    <!--Logo-->
+    <div class="logo">
+        <img src="Images/logo.png" alt="111 Fitness" height="200px">
+    </div>
+    <!--Logo-->
+
+    <!--Navigation Start-->
+    <nav>
+        <div class="nav_1" id="nav1">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="trainer.html">Trainer</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+    <!--Navigation end-->
+    <!--JavaScript-->
+    <script>
+        var nav1 = document.getElementById("nav1");
+        function showMenu() {
+            nav1.style.left = "0";
+        }
+        function hideMenu() {
+            nav1.style.left = "-300px";
+        }
+    </script>
+    <!--JavaScript-->
+
+    <h1 class="abouth1">Who We Are</h1>
+    <div class="mainabout">
+        <h1 style="font-size: 30px; font-weight: bold;">OUR STORY</h1>
+        <p style="font-size: 20px">As one of Pakistan’s biggest fitness brands, we hold a trusted and long-standing position. With extensive presence, expert teams, advanced technology, and top-notch clubs, we have witnessed significant changes throughout our journey. However, our purpose remains unwavering: inspiring people to push their boundaries in life.</p>
+        <div class="mission">
+            <h1 style="font-size: 30px; font-weight: bold;">OUR MISSION</h1>
+            <p style="font-size: 20px;">Our goal is to improve the well-being of our local community by focusing on enhancing both physical fitness and emotional well-being. We strive to create a secure environment that prioritizes your psychological health.</p>
+        </div>
+        <div class="vission">
+            <h1 style="font-size: 30px; font-weight: bold;">OUR VISION</h1>
+            <p style="font-size: 20px">We inspire a healthier community by maximizing public access to state-of-the-art fitness facilities. Our investment is focused on utilizing innovative technology to enhance the fitness experience and provide maximum benefits of being active.</p>
+        </div>
+        <div class="goals">
+            <h1 style="font-size: 30px; font-weight: bold;">OUR GOALS</h1>
+            <p style="font-size: 20px">We strive to enhance people’s lives through a superior fitness experience in a warm, inclusive, and hygienic setting. We maintain the highest standards to ensure that everyone feels a sense of belonging.</p>
+        </div>
+         
+
+    </div>
+    <div class="footer">
+        <footer>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> 03145810194</li>
+                <li><i class="fa-brands fa-instagram"></i> 111_Fitness</li>
+                <li>www.111fitness.com</li>
+            </ul>
+        
+        </footer>
+    </div>
+  
+    
+</body>
+</html>

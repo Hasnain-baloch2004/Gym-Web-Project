@@ -1,0 +1,604 @@
+/* Reset default browser styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+/* Logo styling */
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  background: url("../Images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation bar styling */
+.nav_1 {
+  background-color: darkred;
+  padding: 15px;
+  z-index: 2;
+  height: auto; 
+  width: 100%; 
+  position: relative; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Navigation list styling */
+.nav_1 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex; 
+}
+
+.nav_1 ul li {
+  padding: 10px 20px;
+  display: inline-block; 
+}
+
+.nav_1 ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* FontAwesome icons */
+.nav_1 .fa {
+  display: none;
+}
+nav .fa {
+  display: none;
+}
+
+/* Banner styling */
+.banner {
+  width: 100%;
+  height: 60vh;
+  max-height: 500px;
+  background: url("../Images/banner1.jpeg") no-repeat center center/cover;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.text_block {
+  text-align: center;
+  width: 80%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text_block h1 {
+  font-size: 60px;
+}
+
+.text_block p {
+  font-size: 18px;
+}
+
+/* Button styling */
+.btn-primary1 {
+  display: inline-block;
+  text-decoration: none;
+  background: transparent;
+  position: relative;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn-primary1:hover {
+  background-color: white;
+  color: darkred;
+  transform: scale(1.1);
+}
+
+.btn-primary1:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive styling for screens less than 700px */
+@media (max-width: 700px) {
+  .text_block h1 {
+    font-size: 30px;
+  }
+
+  .text_block p {
+    font-size: 15px;
+  }
+
+  .nav_1 {
+    background-color: darkred;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 180px;
+    top: 0;
+    left: -180px; 
+    transition: left 0.3s;
+    flex-direction: column; 
+  }
+
+  .nav_1 ul {
+    flex-direction: column;
+  }
+
+  .nav_1 ul li {
+    display: block;
+    padding: 10px 0; 
+  }
+
+  .nav_1 .fa-times {
+    display: block; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  nav .fa-bars {
+    display: block; 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .banner {
+    height: 40vh; 
+  }
+
+  .col-6 .text_trainer {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 701px) {
+  .nav_1 {
+    background-color: darkred;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0; /* Ensure the left property is reset */
+    transition: none;
+    flex-direction: row;
+  }
+
+  .nav_1 ul {
+    flex-direction: row;
+  }
+
+  .nav_1 ul li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+  .nav_1 .fa-times,
+  nav .fa-bars {
+    display: none;
+  }
+}
+
+/* Grid system */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  text-align: justify;
+}
+
+/* Additional styling for specific elements */
+.col-4 {
+  color: white;
+  font-size: 20px;
+}
+
+.heading_plains {
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+  color: white;
+}
+
+/* Banner 2 styling */
+.banner2 {
+  width: 100%;
+  height: 40vh;  
+  max-height: 500px;  
+  position: relative;
+}
+
+.banner2 img {
+  width: 100%;      
+  text-align: left;
+  position: relative;      
+}
+
+/* Footer styling */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Plans section styling */
+.plans {
+  background-color: black;
+}
+
+/* About section styling */
+.abouth1 {
+  background-color: black;
+  padding: 50px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.mainabout {
+  padding: 20px;
+  padding-left: 100px;
+  margin: 30px;
+}
+
+.mission, .vission, .goals {
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Trainer section styling */
+.trainerh1 {
+  background-color: black;
+  padding: 50px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nabeel1 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.nabeel1 img {
+  width: auto;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  padding-left: 200px;
+}
+
+/* Container styling */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.text_trainer {
+  font-size: 20px;
+  padding-right: 200px;
+  line-height: 1.5;
+  color: black;
+  top: 50px;
+}
+
+/* Contact section styling */
+.contact, .contact1, .contact2, .contact3 {
+  margin: 20px;
+  padding: 20px;
+  color: darkred;
+  text-decoration: none;
+}
+
+.contact1, .contact2, .contact3 {
+  padding-left: 250px;
+}
+
+.address {
+  text-align: right;
+  color: darkred;
+  top: 0px;
+  padding: 20px;
+  line-height: 2.5;
+  text-decoration: none;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form container styling */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+/* Form styling */
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+/* member details styling */
+form .membership-plan .membership-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: #9b59b6;
+  border-color: #d9d9d9;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* Submit button styling */
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* Responsive form styling */
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+
+
+.formprimary{
+  background-image: url(../Images/regsiter.png);
+}
+.formprimary .container{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 400px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Form animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+form .input-box input {
+  animation: fadeIn 1s ease-in-out;
+}
+
+form .button input {
+  animation: fadeIn 1.5s ease-in-out;
+}
+@media (max-width: 786px) {
+  .trainerh1 {
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  .nabeel1 img {
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .text_trainer {
+    font-size: 18px;
+    padding-right: 20px;
+  }
+
+  .contact1, .contact2, .contact3 {
+    padding-left: 20px;
+  }
+}

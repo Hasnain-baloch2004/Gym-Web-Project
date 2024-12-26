@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f9bbc435e.js" crossorigin="anonymous"></script>
+    <title>111 Fitness</title>
+</head>
+<body>
+    <!--Logo-->
+    <div class="logo">
+        <img src="Images/logo.png" alt="111 Fitness" height="200px">
+    </div>
+    <!--Logo-->
+
+    <!--Navigation Start-->
+    <nav>
+        <div class="nav_1" id="nav1">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="trainer.html">Trainer</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+    <!--Navigation end-->
+    <!--JavaScript-->
+    <script>
+        var nav1 = document.getElementById("nav1");
+        function showMenu() {
+            nav1.style.left = "0";
+        }
+        function hideMenu() {
+            nav1.style.left = "-300px";
+        }
+    </script>
+    <!--JavaScript-->
+    
+    
+    <p><h1 class="trainerh1">Contact Us</h1></p>
+    <div class="contact">
+        <div class="contact1">
+    <p><a href="#"><i class="fa-solid fa-phone"> 03145810194</i></a></p>
+    </div>
+      
+    <div class="contact2">
+    <p><a href="#"><i class="fa-brands fa-instagram"> 111_Fitness</i></a></p>
+    </div>
+    <div class="contact3">
+    <p><a href="#"><i class="fa-solid fa-envelope"> 111fitness@gmail.com</i></a></p>
+    </div>
+
+
+    
+</div>
+
+<div class="address">
+    <h1>111 FITNESS GYM</h1>
+    <i class="fa-solid fa-location-dot">  <a href="https://maps.app.goo.gl/X1ivriWZqc6gYDez6">111   Fitness   Gym   Phase   5   Dua   Chowk   Ghori   Town   Islamabad </a></i>
+
+</div>
+
+<div class="footer">
+    <footer>
+        <ul>
+            <li><i class="fa-solid fa-phone"></i> 03145810194</li>
+            <li><i class="fa-brands fa-instagram"></i> 111_Fitness</li>
+            <li>www.111fitness.com</li>
+        </ul>
+    
+    </footer>
+</div>
+
+
+    
+  
+  
+    
+</body>
+</html>
